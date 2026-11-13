@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }} | Banco de Sangre UPQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body class="bg-base-200">
+{% if rol %}
+<div class="app-layout">
+    <aside class="sidebar">
+        <div class="brand"><div class="drop">♥</div><b>Banco de Sangre UPQ</b></div>
+        <nav>
+        {% if rol == 'Administrador' %}
+            <a href="{{ url_for('admin_dashboard') }}">Inicio</a><a href="{{ url_for('usuarios') }}">Usuarios</a>
+            <a href="{{ url_for('medicos') }}">Médicos</a><a href="{{ url_for('admin_donantes') }}">Donantes</a>
+            <a href="{{ url_for('admin_citas') }}">Citas</a><a href="{{ url_for('sedes') }}">Sedes y horarios</a>
+            <a href="{{ url_for('campanas') }}">Campañas</a><a href="{{ url_for('reportes') }}">Reportes</a>
+        {% elif rol == 'Medico' %}
+            <a href="{{ url_for('medico_dashboard') }}">Inicio</a><a href="{{ url_for('lista_donantes') }}">Donantes</a>
+            <a href="{{ url_for('citas_medicas') }}">Citas</a><a href="{{ url_for('valoracion') }}">Registro</a>
+            <a href="{{ url_for('historial') }}">Historial</a>
+        {% else %}
+            <a href="{{ url_for('donante_dashboard') }}">Inicio</a><a href="{{ url_for('perfil') }}">Perfil</a>
+            <a href="{{ url_for('solicitar_cita') }}">Solicitar cita</a><a href="{{ url_for('mis_citas') }}">Mis citas</a>
+        {% endif %}
+            <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+        </nav>
+    </aside>
+    <main class="main-content">
+{% else %}
+    <main class="auth-main">
+{% endif %}
+        {% with mensajes = get_flashed_messages() %}
+          {% if mensajes %}<div class="toast toast-top toast-end">{% for m in mensajes %}<div class="alert alert-info"><span>{{ m }}</span></div>{% endfor %}</div>{% endif %}
+        {% endwith %}
+        {% block contenido %}{% endblock %}
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Sitio Web Completo</title>
+</head>
+<body>
+
+  <!-- Encabezado de la página -->
+  <header>
+    <h1>Mi Sitio Web</h1>
+    <p>Aprende desarrollo web paso a paso</p>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#tabla">Calificaciones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="https://www.google.com" target="_blank">Ir a Google</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main id="inicio">
+
+    <!-- Sección de contenido temático -->
+    <section id="cursos">
+      <h2>Nuestros Servicios</h2>
+      <p>Ofrecemos desarrollo web y diseño digital.</p>
+
+      <!-- Artículo independiente -->
+      <article>
+        <h2>Primera Publicación</h2>
+        <p>Estructurar código limpio mejora la lectura del sitio.</p>
+
+        <!-- Elemento multimedia con pie de foto -->
+        <figure>
+          <img src="https://via.placeholder.com/200x100" alt="Esquema básico">
+          <figcaption>Figura 1: Esquema de prueba.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!-- Barra lateral con temas secundarios -->
+    <aside>
+      <h3>Temas Relacionados</h3>
+      <ul>
+        <li><a href="#css">Aprender CSS básico</a></li>
+      </ul>
+    </aside>
+
+    <!-- Sección con la tabla de datos -->
+    <section id="tabla">
+      <h2>Tabla de Calificaciones</h2>
+      <table border="1">
+        <tr>
+          <th>Alumno</th>
+          <th>Calificación</th>
+        </tr>
+        <tr>
+          <td>Carlos</td>
+          <td>9.5</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Contenedor genérico para agrupar el formulario -->
+    <div class="tarjeta" id="contacto">
+      <h3>Formulario de Contacto</h3>
+      <form action="/enviar" method="POST">
+        <div>
+          <label for="txt-nombre">Nombre:</label>
+          <input type="text" id="txt-nombre" name="nombre" placeholder="Escribe tu nombre">
+        </div>
+        <br>
+        <div>
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+        </div>
+        <br>
+        <div>
+          <label for="clave">Contraseña:</label>
+          <input type="password" id="clave" name="password" placeholder="Tu contraseña">
+        </div>
+        <br>
+        <div>
+          <input type="checkbox" id="acepto" name="terminos">
+          <label for="acepto">Acepto los términos</label>
+        </div>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2026 Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

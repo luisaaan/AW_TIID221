@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El noticiero</title>
+    <style>
+        .encabezado{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 30px;
+            margin: 30px;
+            border: 1px solid black;
+        }
+        .titulo, .fecha{
+            text-align: center;
+            margin: 10px 50px;
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            margin: 10px 50px;
+        }
+        .logo, .fecha{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .categoria{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 30px;
+            border: 1px solid black;
+            padding: 30px;
+        }
+        .contenido{
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            margin: 30px;
+            border: 1px solid black;
+            padding: 30px;
+        }
+        .columna-izquierda, .columna-central{
+            padding 30px;
+            margin: 30px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <div class="logo">
+                <img src="img/img1.png" alt="Logo del noticiero" style="padding: 20px 80px 20px; width: 100px; height: 100px;">
+                <div>
+                    <p>EL MUNDO</p>
+                    <p>EN TUS MANOS</p>
+                </div>
+            </div>
+            <div class="titulo">
+                <h1>El noticiero</h1>
+                <h2>--- INFORMACIÓN -- ACTUALIDAD -- TU DIARIO ---</h2>
+            </div>
+            <div class="fecha">
+                <p>Lunes, 26 de mayo de 2025</p>
+                <p>Año XX   |   N° 7,842</p>
+            </div>
+        </header>
+        <div class="categoria">
+            <h2 style="margin: 10px 50px">INICIO</h2><h2>|</h2>
+            <h2 style="margin: 10px 50px">MUNDO</h2><h2>|</h2>
+            <h2 style="margin: 10px 50px">NACIONAL</h2><h2>|</h2>
+            <h2 style="margin: 10px 50px">ECONOMIA</h2><h2>|</h2>
+            <h2 style="margin: 10px 50px">DEPORTES</h2><h2>|</h2>
+            <h2 style="margin: 10px 50px">TECNOLOGIA</h2><h2>|</h2>
+            <h2 style="margin: 10px 50px">CULTURA</h2><h2>|</h2>
+        </div>
+        <div class="contenido">
+            <div class="columna-izquierda">
+                <h3>ÚLTIMAS NOTICIAS</h3>
+                <p>...........................................................................</p>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="img/img1.png" alt="Noticia 1" style="padding: 20px 20px 20px; width: 100px; height: 100px;">
+                    <div>
+                        <p>El mundo avanza hacia un futuro más sostenible</p>
+                        <p>Pág. 2</p>
+                    </div>
+                </div>
+                <p>...........................................................................</p>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="img/img2.png" alt="Noticia 2" style="padding: 20px 20px 20px; width: 100px; height: 100px;">
+                    <div>
+                        <p>La economía muestra señales de recuperación</p>
+                        <p>Pág. 3</p>
+                    </div>
+                </div>
+                <p>...........................................................................</p>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="img/img3.png" alt="Noticia 3" style="padding: 20px 20px 20px; width: 100px; height: 100px;">
+                    <div>
+                        <p>El equipo local logra una gran victoria</p>
+                        <p>Pág. 4</p>
+                    </div>
+                </div>
+                <p>...........................................................................</p>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="img/img4.png" alt="Noticia 4" style="padding: 20px 20px 20px; width: 100px; height: 100px;">
+                    <div>
+                        <p>La tecnología sigue transformando nuestras vidas</p>
+                        <p>Pág. 5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columna-central">
+                <h1 style="margin: 30px;">Un mejor mañana es posible</h1>
+                <h3 style="margin: 30px;">La innovación, la educación y el trabajo en equipo son clave para construir un futuro más justo y sostenible</h3>
+                <img src="img/img5.jpg" alt="Noticias en vivo" style="width: 90%; margin-left: 5%; margin-right: 5%;">
+            </div>
+            <div class="columna-derecha">
+                <div>
+                    <h3>DESTACADO</h3>
+                    <img src="img/img6.png" alt="Destacadas" style="width: 100px height: auto;">
+                    <h3>Pequeñas acciones, grandes cambios</h3>
+                    <p>Cada desición cuenta. Desde el consumo responsable hasta el apoyo a la educación, podemos hacer la diferencia</p>
+                </div>
+                <div>
+                    <h3>EL TIEMPO</h3>
+                    <p>...........................</p>
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="img/img7.png" alt="El tiempo" style="width: 100px; height: auto;">
+                        <h3>23°C</h3>
+                    </div>
+                        <p>Soleado</p>
+                    <p>...........................</p>
+                    <div>
+                        <div style="display: flex; flex-direction: row;">
+                            <img src="img/img7.png" alt="sol" style="width: 30%; height: auto;">
+                            <p>Mar 22°/12°</p>
+                        </div>
+                        <div style="display: flex; flex-direction: row;">   
+                            <img src="img/img7.png" alt="sol" style="width: 30%; height: auto;">
+                            <p>Mie 21°/11°</p>
+                        </div>
+                        <div style="display: flex; flex-direction: row;">   
+                            <img src="img/img8.png" alt="nube" style="width: 30%; height: auto;">
+                            <p>Jue 20°/10°</p>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

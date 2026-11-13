@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+*{font-family:Montserrat,sans-serif}
+:root{--rojo:#a90018;--rojo2:#d71935}
+.sidebar{width:220px;min-height:100vh;background:linear-gradient(180deg,#900016,#b40d27);color:white;padding:18px 12px;position:fixed;left:0;top:0}
+.brand{text-align:center;padding:8px 4px 22px;font-size:14px}.drop{font-size:36px;margin-bottom:6px;color:#fff}
+.sidebar nav{display:flex;flex-direction:column;gap:5px}.sidebar nav a{color:white;text-decoration:none;padding:10px 12px;border-radius:9px;font-size:13px}
+.sidebar nav a:hover{background:#ffffff26}
+.main-content{margin-left:220px;padding:28px;min-height:100vh}.auth-main{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.page-title{font-size:25px;font-weight:700;margin-bottom:20px;color:#252525}
+.panel{background:white;border:1px solid #eee;border-radius:14px;padding:20px;box-shadow:0 3px 12px #00000008}
+.auth-card{max-width:500px;width:100%;background:white;border-radius:18px;padding:30px;box-shadow:0 6px 24px #90001618}
+.auth-brand{text-align:center;color:#990019;margin-bottom:25px}.auth-brand .drop{color:#a90018;font-size:58px}
+.btn-primary{background:var(--rojo)!important;border-color:var(--rojo)!important;color:white!important}
+.stat-card{background:white;border-radius:13px;padding:18px;border:1px solid #eee}
+.table th{background:#f8e9ec}.form-control{margin-bottom:12px}
+@media(max-width:800px){.sidebar{position:relative;width:100%;min-height:auto}.sidebar nav{flex-direction:row;flex-wrap:wrap}.main-content{margin:0;padding:15px}}
