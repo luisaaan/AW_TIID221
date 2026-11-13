@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h1 class="page-title">Reportes y estadísticas</h1><div class="grid md:grid-cols-3 gap-4 mb-5"><div class="stat-card"><div class="text-3xl font-bold text-red-700">Por mes</div><div class="text-sm text-gray-500">Donaciones</div></div><div class="stat-card"><div class="text-3xl font-bold text-red-700">Por grupo</div><div class="text-sm text-gray-500">Tipo de sangre</div></div><div class="stat-card"><div class="text-3xl font-bold text-red-700">2026</div><div class="text-sm text-gray-500">Periodo</div></div></div><div class="panel"><label class="label">Tipo de reporte</label><select class="select select-bordered"><option>Donaciones</option><option>Citas</option><option>Donantes</option></select> <button class="btn btn-primary">Generar reporte</button></div>
+{% endblock %}

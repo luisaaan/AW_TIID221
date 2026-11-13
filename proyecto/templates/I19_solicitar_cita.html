@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h1 class="page-title">Solicitar Cita</h1><div class="panel max-w-2xl"><form><label class="form-control"><span class="label-text mb-1">Fecha</span><input class="input input-bordered w-full" name="fecha" type="date" required></label><label class="form-control"><span class="label-text mb-1">Horario</span><input class="input input-bordered w-full" name="hora" type="time" required></label><label class="form-control"><span class="label-text">Sede</span><select class="select select-bordered"><option>Centro UPQ</option><option>Hospital Salud</option></select></label><button class="btn btn-primary">Continuar</button></form></div>
+{% endblock %}
